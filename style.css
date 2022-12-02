@@ -1,0 +1,43 @@
+
+/* define navbar visability for device sizes */
+@media screen and (max-width: 768px) {
+  .navbar-top-desktop {
+    display: none;
+  }
+  .floating-desktop-footer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-top-mobile {
+    display: none;
+  }
+  .floating-footer {
+    display: none;
+  }
+}
+
+
+.navbar-top-mobile {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  border-radius: 0px;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.5em;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
