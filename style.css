@@ -1,43 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 
 /* define navbar visability for device sizes */
 @media screen and (max-width: 768px) {
-  .navbar-top-desktop {
-    display: none;
-  }
-  .floating-desktop-footer {
-    display: none;
-  }
+    .navbar-top-desktop-visability {
+      display: none;
+    }
+    .footer-visability-wrapper-desktop {
+      display: none;
+    }
+    .capability-wrapper-inner {
+        width: 90%;
+    }
 }
 
 @media screen and (min-width: 768px) {
-  .navbar-top-mobile {
-    display: none;
-  }
-  .floating-footer {
-    display: none;
-  }
+    .navbar-top-mobile-visability {
+      display: none;
+    }
+    .footer-visability-wrapper-mobile {
+      display: none;
+    }
+    .capability-wrapper-inner {
+        width: 60%;
+    }
+}
+    
+.navbar-top-desktop-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    margin: 0;
+    background-color: #1E1E1E;
+    color: #ffffff;
+    height: calc(1.7vh + 35px);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar-top-mobile-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    margin: 0;
+    background-color: #1E1E1E;
+    color: #ffffff;
+    height: calc(1.7vh + 35px);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.body-flexbox-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: calc(1.7vh + 35px);
+    width: 100%;
+}
+
+.body-flexbox-wrapper-capability {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.body-flexbox-wrapper-capability:nth-child(odd) {
+    background-color: #1E1E1E;
+}
+.body-flexbox-wrapper-capability:nth-child(even) {
+    background-color: #ffffff;
+}
+
+.capability-wrapper-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    padding: 2vh 2vh 2vh 2vh;
+    margin: 0;
+}
+
+.profile-pic {
+    max-width: 15vh;
+    margin: 1.5vh;
+    padding: 0;
+}
+
+.logo-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+.logo-contain {
+    max-width: 10vh;
+    margin: 1.5vh;
+}
+
+.footer-wrapper-mobile-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #1e1e1eda;
+    color: #ffffff;
+    height: calc(1.7vh + 35px);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.footer-wrapper-desktop-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width: 40%;
+    background-color: #070707c5;
+    color: #ffffff;
+    height: calc(1.7vh + 55px);
+    position: fixed;
+    bottom: 5vh;
+    left: 30%;
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    color: #1E1E1E;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin: 0;
+    padding-bottom: 4vh;
+    line-height: 1.5em;
+    color: #1E1E1E;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#capability-text-light {
+    color: #ffffff;
+}
+
+#capability-text-dark {
+    color: #1E1E1E;
 }
 
 
-.navbar-top-mobile {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 0px;
-  margin: 0px;
-  border: 0px;
-  border-radius: 0px;
-  font-size: 1.5em;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  line-height: 1.5em;
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 1000;
-}
+/* colapsable mobile navbar */
+
