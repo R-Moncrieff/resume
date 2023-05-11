@@ -131,7 +131,7 @@
     padding: 0;
     margin: 0;
     width: 100%;
-    background-color: #24477f;
+    background-color: rgba(36, 71, 127, 0.9);
     color: #ffffff;
     height: calc(1.7vh + 35px);
     position: fixed;
@@ -148,7 +148,7 @@
     padding: 0;
     margin: 0;
     width: 40%;
-    background-color: #24477f;
+    background-color: rgba(36, 71, 127, 0.9);
     color: #ffffff;
     height: calc(1.7vh + 55px);
     position: fixed;
