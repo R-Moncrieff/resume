@@ -202,4 +202,16 @@ a {
 }
 
 
-/* colapsable mobile navbar */
+/* colapsable loom demo */
+
+details {
+    user-select: none;
+  }
+  summary {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  summary::-webkit-details-marker {
+    display: none;
+  }
