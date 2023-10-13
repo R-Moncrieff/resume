@@ -15,9 +15,6 @@
     .capability-wrapper-inner {
         width: 90%;
     }
-    .Expand-button-wrapper { 
-        padding-left: 80%;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -29,9 +26,6 @@
     }
     .capability-wrapper-inner {
         width: 60%;
-    }
-    .Expand-button-wrapper { 
-        padding-left: 10%;
     }
 }
     
@@ -124,8 +118,8 @@
 }
 
 .logo-contain {
-    max-width: 12vh;
-    margin: 1.2vh;
+    max-width: 10vh;
+    margin: 1.5vh;
     vertical-align: middle;
 }
 
@@ -163,82 +157,6 @@
     z-index: 1;
 }
 
-
-.Expertise {  display: grid;
-    grid-template-columns: 1.4fr 0.6fr;
-    grid-template-rows: auto 0.4fr auto auto 0.6fr;
-    grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    overflow: hidden;
-    grid-template-areas:
-      "Logo Years"
-      "Horizontal-break Horizontal-break"
-      "Short-text Short-text"
-      "Long-text Long-text"
-      "Expand-button-wrapper Expand-button-wrapper";
-  }
-  
-  .Horizontal-break { 
-    grid-area: Horizontal-break;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    margin:0em;
-}
-  
-  .Short-text { 
-    grid-area: Short-text;
-    padding-left: 3em;
-    padding-right: 3em;
-    padding-bottom: 0em;
-    margin:0em;
-}
-  
-  .Long-text { 
-    grid-area: Long-text;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #1E1E1E;
-    padding-top: 0em;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-bottom: 0em;
-    margin:0em;
-}
-  
-  .Expand-button-wrapper { 
-    grid-area: Expand-button-wrapper;
-    text-align: center;
-    padding-top: 0em;
-    padding-bottom: 0em;
-    margin: 0em;
-}
-  
-  .Logo { 
-    grid-area: Logo;
-    padding-bottom: 0em;
-    padding-top: 0em;
-    margin:0em;
-}
-  
-  .Years { 
-    grid-area: Years;
-    padding-right: 2em;
-    padding-bottom: 0em;
-    padding-top: 0em;
-    margin:0em;
-}
-  
-hr {
-    height: 0.3em;
-    background-color: rgb(255, 255, 255);
-    border: none;
-    margin: 0;
-    padding: 0;
-}
-
 h1 {
     font-family: 'Inter', sans-serif;
     font-size: 1.1em;
@@ -250,17 +168,16 @@ h1 {
 
 h2 {
     font-family: 'Inter', sans-serif;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: 600;
     margin: 0;
     padding: 0;
-    padding-bottom: 1em;
     color: #1E1E1E;
 }
 
 p {
     font-family: 'Inter', sans-serif;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 500;
     margin: 0;
     padding-bottom: 4vh;
@@ -268,66 +185,6 @@ p {
     color: #1E1E1E;
 
 
-}
-
-.list-title {
-    font-family: 'Inter', sans-serif;
-    font-size: 1em;
-    font-weight: 800;
-    margin: 0;
-    padding-bottom: 0.2em;
-    line-height: 1.5em;
-    color: #1E1E1E;
-}
-
-.list-format {
-    font-family: 'Inter', sans-serif;
-    font-size: 1em;
-    font-weight: 500;
-    margin: 0;
-    padding-bottom: 2em;
-    padding-left: 2em;
-    line-height: 1.5em;
-    color: #1E1E1E;
-}
-
-.list-items {
-    font-family: 'Inter', sans-serif;
-    font-size: 1em;
-    font-weight: 500;
-    margin: 0;
-    padding-bottom: 0.2em;
-    padding-left: 1em;
-    line-height: 1.5em;
-    color: #1E1E1E;
-}
-
-
-li {
-    font-family: 'Inter', sans-serif;
-    font-size: 1em;
-    font-weight: 500;
-    margin: 0;
-    padding-bottom: 0.7em;
-    line-height: 1.2em;
-}
-
-
-
-button.Expand-button {
-    font-family: 'Inter', sans-serif;
-    font-size: 3.5em;
-    font-weight: 500;
-    margin: 0em;
-    padding-left: 0em;
-    padding-top: 0em;
-    padding-right: 1em;
-    padding-bottom: 0.5em;
-    text-align: center;
-    outline: none;
-    border: none;
-    background-color: #1E1E1E;
-    cursor: pointer;
 }
 
 
@@ -358,4 +215,3 @@ details {
   summary::-webkit-details-marker {
     display: none;
   }
-
